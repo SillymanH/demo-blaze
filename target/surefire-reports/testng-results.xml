@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-18T02:16:09 AST" name="DemoBlazeTestSuite" finished-at="2023-03-18T02:17:49 AST" duration-ms="100710">
+    <groups>
+    </groups>
+    <test started-at="2023-03-18T02:16:09 AST" name="Command line test" finished-at="2023-03-18T02:17:49 AST" duration-ms="100710">
+      <class name="DemoBlazeTestSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:09 AST" name="setup" finished-at="2023-03-18T02:16:15 AST" duration-ms="6672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="REGISTER_AND_LOGIN()[pri:1, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:15 AST" name="REGISTER_AND_LOGIN" description="Register and login" finished-at="2023-03-18T02:16:30 AST" duration-ms="14521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- REGISTER_AND_LOGIN -->
+        <test-method is-config="true" signature="testCaseTearDown()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:30 AST" name="testCaseTearDown" finished-at="2023-03-18T02:16:30 AST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseTearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:30 AST" name="setup" finished-at="2023-03-18T02:16:35 AST" duration-ms="4370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CHECK_CATEGORY_LIST_HAS_ITEMS()[pri:2, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:35 AST" name="CHECK_CATEGORY_LIST_HAS_ITEMS" description="Validate the category list has items" finished-at="2023-03-18T02:16:38 AST" duration-ms="3187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CHECK_CATEGORY_LIST_HAS_ITEMS -->
+        <test-method is-config="true" signature="testCaseTearDown()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:38 AST" name="testCaseTearDown" finished-at="2023-03-18T02:16:38 AST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseTearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:38 AST" name="setup" finished-at="2023-03-18T02:16:42 AST" duration-ms="4318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ADD_RANDOM_ITEM_TO_CART()[pri:3, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:42 AST" name="ADD_RANDOM_ITEM_TO_CART" description="Add random item to cart" finished-at="2023-03-18T02:16:52 AST" duration-ms="9470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ADD_RANDOM_ITEM_TO_CART -->
+        <test-method is-config="true" signature="testCaseTearDown()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:52 AST" name="testCaseTearDown" finished-at="2023-03-18T02:16:53 AST" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseTearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:53 AST" name="setup" finished-at="2023-03-18T02:16:57 AST" duration-ms="4319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="REMOVE_ITEM_FROM_CART()[pri:4, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:16:57 AST" name="REMOVE_ITEM_FROM_CART" description="Remove item from cart" finished-at="2023-03-18T02:17:30 AST" duration-ms="33036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- REMOVE_ITEM_FROM_CART -->
+        <test-method is-config="true" signature="testCaseTearDown()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:17:30 AST" name="testCaseTearDown" finished-at="2023-03-18T02:17:30 AST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseTearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:17:30 AST" name="setup" finished-at="2023-03-18T02:17:34 AST" duration-ms="4350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="COMPLETE_CHECKOUT()[pri:5, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:17:34 AST" name="COMPLETE_CHECKOUT" description="Complete successful checkout with random item" finished-at="2023-03-18T02:17:49 AST" duration-ms="14697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- COMPLETE_CHECKOUT -->
+        <test-method is-config="true" signature="testCaseTearDown()[pri:0, instance:DemoBlazeTestSuite@6366ebe0]" started-at="2023-03-18T02:17:49 AST" name="testCaseTearDown" finished-at="2023-03-18T02:17:49 AST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseTearDown -->
+      </class> <!-- DemoBlazeTestSuite -->
+    </test> <!-- Command line test -->
+  </suite> <!-- DemoBlazeTestSuite -->
+</testng-results>
