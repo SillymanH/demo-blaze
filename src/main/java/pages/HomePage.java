@@ -15,7 +15,6 @@ public class HomePage {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
-    private static final String homePageURL = "https://www.demoblaze.com/";
 
     public HomePage(WebDriver driver, WebDriverWait wait) {
 
@@ -23,7 +22,7 @@ public class HomePage {
         this.wait = wait;
     }
 
-    public void goToHomePage() {
+    public void goToHomePage(String homePageURL) {
         driver.get(homePageURL);
     }
 

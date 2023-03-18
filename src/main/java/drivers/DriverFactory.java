@@ -40,7 +40,7 @@ public abstract class DriverFactory {
     }
 
     public static WebDriverWait getWebDriverWait() {
-        // TODO: 17/03/2023 read from data sheet
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return new WebDriverWait(driver, Duration.ofSeconds(30));
     }

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+import static commons.FileIO.getData;
 import static pageObjects.ItemPageObjects.*;
 
 public class ItemPage {
@@ -44,26 +45,24 @@ public class ItemPage {
         driver.findElement(PLACE_ORDER_BUTTON).click();
     }
 
-    public void fillOrderForm() {
+    public void fillOrderForm() throws Exception {
 
-        // TODO: 18/03/2023 Read data from data sheet
         wait.until(ExpectedConditions.visibilityOfElementLocated(PLACE_ORDER_FORM));
-        driver.findElement(NAME_FIELD).sendKeys("Sleiman");
-        driver.findElement(COUNTRY_FIELD).sendKeys("Saudi Arabia");
-        driver.findElement(CITY_FIELD).sendKeys("Riyadh");
-        driver.findElement(CREDIT_CARD).sendKeys("1234123412341234");
-        driver.findElement(MONTH_FIELD).sendKeys("01");
-        driver.findElement(YEAR_FIELD).sendKeys("2030");
+        driver.findElement(NAME_FIELD).sendKeys(getData("NAME"));
+        driver.findElement(COUNTRY_FIELD).sendKeys(getData("COUNTRY"));
+        driver.findElement(CITY_FIELD).sendKeys(getData("CITY"));
+        driver.findElement(CREDIT_CARD).sendKeys(getData("CARD_NUMBER"));
+        driver.findElement(MONTH_FIELD).sendKeys(getData("EXPIRATION_MONTH"));
+        driver.findElement(YEAR_FIELD).sendKeys(getData("EXPIRATION_YEAR"));
         driver.findElement(PURCHASE_BUTTON).click();
     }
 
-    public boolean getSuccessPurchaseButton() {
+    public boolean getSuccessPurchaseButton() throws Exception {
 
-        // TODO: 18/03/2023 Read success message from data sheet
         wait.until(ExpectedConditions.visibilityOfElementLocated(SUCCESS_PURCHASE_POPUP));
         List<WebElement> headers = driver.findElements(HEADER_ELEMENTS);
         for (WebElement header: headers) {
-            if (header.getText().equals("Thank you for your purchase!"))
+            if (header.getText().equals(getData("PURCHASE_SUCCESS_MESSAGE")))
                 return true;
         }
         return false;
